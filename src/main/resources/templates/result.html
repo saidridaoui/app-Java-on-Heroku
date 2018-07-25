@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create User</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<style>
+body {
+    background-color: #f2f2f2;
+
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: green;
+}
+
+p.uppercase {
+    text-transform: uppercase;
+}
+
+
+</style>
+<body>
+
+
+
+<h1>Insertion has been succussfully </h1>
+<div class="uppercase" >
+<p th:text="'First Name: '  + ${contact.first}" />
+<p th:text="'Last Name: ' + ${contact.last}" />
+<p th:text="'Email: ' + ${contact.email}" />
+
+</div>
+<a href="/createcontactform">Create Another User</a>
+</body>
+</html>

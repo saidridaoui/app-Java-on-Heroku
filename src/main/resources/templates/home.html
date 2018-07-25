@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Accenture Technologie</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" th:href="@{/assets/css/bootstrap.css}" />
+    <link rel="stylesheet" href="../assets/css/thymeleaf-demo.css" th:href="@{/assets/css/style.css}" />
+<style>
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+a.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+a.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+a:link {
+    color: black;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+body {
+    background-color: #f2f2f2;
+
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+
+        
+    color: black;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+</style>
+
+</head>
+<body>
+<!--<div style="margin-top: 20px;margin-left: 50px">-->
+<div class="container">
+
+
+<h1><p> Synchronisation Saleforces Data with Heroku Connect and Heroku PostgreSQL  : </p></h1>
+
+<a href="/contacts" class="button button1">Show Salesforce Contacts </a>
+<a href="/createcontactform" class="button button2">Create a Salesforce Contact</a>
+
+
+
+
+</div>
+</body>
+</html>
